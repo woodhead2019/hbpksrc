@@ -62,6 +62,8 @@ jobs:
     - name: Build a selection of packages
       run: |
         export PATH="/opt/hbpk/bin:/opt/hbpk/harbour/bin/linux/zig:$PATH"
+        # expired artifact leaves empty directory(?)
+        rmdir --ignore-fail-on-non-empty packages-x86_64-linux-musl-last
         if [ -d "packages-x86_64-linux-musl-last" ]; then
           mv packages-x86_64-linux-musl-last/harbour-core*.hbpk hbpksrc/packages/
           mv packages-x86_64-linux-musl-last/zig*.hbpk hbpksrc/packages/
