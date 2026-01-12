@@ -92,6 +92,7 @@ jobs:
           harbour-pgsql \
           zlib \
           openssl \
+          harbour-ssl \
           libssh2 \
           libcotp \
           libduckdb-binary \

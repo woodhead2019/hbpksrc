@@ -110,6 +110,7 @@ jobs:
           hbpk-add zlib*.hbpk
           hbpk-add cmake*.hbpk
           hbpk-add openssl*.hbpk
+          hbpk-add harbour-ssl*.hbpk
           cd ../build
         else
           cd hbpksrc/build
@@ -122,6 +123,7 @@ jobs:
         OPENSSL_ROOT_DIR="$HBPK_WORKDIR" \
         ZLIB_ROOT_DIR="$HBPK_WORKDIR" \
         PKGSELECTION=" \
+          harbour-ssl \
           libcotp \
           hbotp-naldodj \
           libssh2 \
