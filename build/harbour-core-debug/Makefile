@@ -15,7 +15,7 @@ include $(TOPDIR)/hbarch.mk
 
 do-fetch: std-fetch
 do-extract: std-extract
-        -rm -rf $(PKGNAME)-$(PKGVER)
+	-rm -rf $(PKGNAME)-$(PKGVER)
 	mv core-master $(WORKDIR)
 
 do-patch: #fix-configure
