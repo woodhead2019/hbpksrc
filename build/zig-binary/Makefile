@@ -8,7 +8,7 @@ OSTYPE  = $(shell uname -o | sed --e 's/GNU\///' --e 's/Linux/linux/' --e 's/Msy
 ifneq ($(findstring Darwin,$(shell uname)),)
 	OSTYPE  = macos
 	SRCURL  = https://ziglang.org/builds
-	PKGVER  = 0.16.0-dev.1272+f3309a96a
+	PKGVER  = 0.16.0-dev.2261+d6b3dd25a
 	# updated version needed for CommonCrypto headers
 else
         SRCURL  = https://ziglang.org/download/$(PKGVER)
