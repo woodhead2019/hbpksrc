@@ -3,6 +3,28 @@
    Entries may not always be in chronological/commit order.
    See license at the end of file. */
 
+2026-01-12 12:46 UTC+0100 Aleksander Czajczynski (hb fki.pl)
+  * .github/workflows/macos.yml
+    ! expired artifact retest
+
+  * .github/workflows/windows-arm64.yml
+  * .github/workflows/windows.yml
+    + build harbour-curl
+
+  + build/curl-for-win-binary/Makefile
+    * use official curl/libcurl binaries from:
+      https://curl.se/windows/
+      see also:
+      https://github.com/curl/curl-for-win/
+      current ver: 8.18.0_2
+
+  + build/curl-inherit/Makefile
+  + build/harbour-curl/Makefile
+    + add harbour-curl package definition covering hbssl contrib
+
+  * build/openssl/Makefile
+    * up to 3.6.1
+
 2026-01-12 20:56 UTC+0100 Aleksander Czajczynski (hb fki.pl)
   * .github/workflows/macos.yml
   * .github/workflows/ubuntu-arm64.yml

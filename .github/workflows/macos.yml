@@ -66,6 +66,7 @@ jobs:
       run: |
         export HBPK_WORKDIR="$HOME/hbpk"
         export PATH="$HBPK_WORKDIR/bin:$HBPK_WORKDIR/harbour/bin/darwin/zig:$(brew --prefix)/opt/grep/libexec/gnubin:$PATH"
+        rm -df packages-aarch64-macos-last
         if [ -d "packages-aarch64-macos-last" ]; then
           mv packages-aarch64-macos-last/harbour-core*.hbpk hbpksrc/packages/
           mv packages-aarch64-macos-last/zig*.hbpk hbpksrc/packages/

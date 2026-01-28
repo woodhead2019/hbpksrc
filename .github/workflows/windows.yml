@@ -116,6 +116,8 @@ jobs:
           letodbf-rdd-alcz \
           harbour-yaml \
           harbour-crypto \
+          curl-for-win-binary \
+          harbour-curl \
           hwgui \
           harbour-pgsql \
           libduckdb-binary \
