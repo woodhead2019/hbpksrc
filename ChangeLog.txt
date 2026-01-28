@@ -3,7 +3,29 @@
    Entries may not always be in chronological/commit order.
    See license at the end of file. */
 
-2026-01-12 12:46 UTC+0100 Aleksander Czajczynski (hb fki.pl)
+2026-01-28 20:18 UTC+0100 Aleksander Czajczynski (hb fki.pl)
+  + build/hbimgui-docking/Makefile
+  + build/hbimgui/Makefile
+  + build/hbimgui-yadbu/Makefile
+    + added packages for harbour-cimgui-sokol-starterkit
+      plus a package for example "dbu-like" GUI application
+
+      more info:
+      https://github.com/alcz/harbour-cimgui-sokol-starterkit
+
+    ; hbimgui and hbimgui-docking are not recommended to be installed
+      at the same time, but if you want to solve why, please try
+
+  * .github/workflows/windows-arm64.yml
+  * .github/workflows/windows.yml
+    + build harbour-cimgui-* packages on Windows
+
+    * build debug version of Harbour with disabled undefined behavior sanitizer
+      trapping first
+
+    * don't fail the job entierly if debug version traps
+
+2026-01-28 12:46 UTC+0100 Aleksander Czajczynski (hb fki.pl)
   * .github/workflows/macos.yml
     ! expired artifact retest
 
