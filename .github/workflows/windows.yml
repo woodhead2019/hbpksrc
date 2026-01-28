@@ -88,7 +88,7 @@ jobs:
       run: |
         export PATH="/opt/hbpk/bin:/opt/hbpk/harbour/bin/win/zig:$PATH"
         # expired artifact leaves empty directory(?)
-        rmdir --ignore-fail-on-non-empty packages-x86_64-windows-gnu-last
+        rmdir --ignore-fail-on-non-empty packages-x86_64-windows-gnu-last || true
         if [ -d "packages-x86_64-windows-gnu-last" ]; then
           mv packages-x86_64-windows-gnu-last/harbour-core*.hbpk hbpksrc/packages/
           mv packages-x86_64-windows-gnu-last/zig*.hbpk hbpksrc/packages/
